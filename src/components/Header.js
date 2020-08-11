@@ -2,7 +2,6 @@ import PropTypes from "prop-types"
 import React from "react"
 import { Breadcrumbs, Text, Link as ZeitLink } from "@zeit-ui/react"
 import { Link } from "gatsby"
-import { Github } from "@zeit-ui/react-icons"
 
 const Header = ({ siteTitle }) => {
   return (

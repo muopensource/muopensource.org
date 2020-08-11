@@ -1,27 +1,11 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/ssr-apis/
- */
-
-// You can delete this file if you're not using it
 import React from "react"
-import { navigate } from "gatsby"
-import { AuthProvider } from "react-use-auth"
-import { ZeitProvider } from "@zeit-ui/react"
+import { ZeitProvider, CssBaseline } from "@zeit-ui/react"
 
 export const wrapRootElement = ({ element }) => (
   <div>
     <ZeitProvider>
       <CssBaseline />
-      <AuthProvider
-        navigate={navigate}
-        callback_domain="https://useauth.dev"
-        auth0_domain="dev-bknbekav.us.auth0.com"
-        auth0_client_id="qAmr82Pin1sw2kxp9Td9SPbWkpYoX1Ak"
-      >
-        {element}
-      </AuthProvider>
+      {element}
     </ZeitProvider>
   </div>
 )
