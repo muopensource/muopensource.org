@@ -2,31 +2,9 @@ import PropTypes from "prop-types"
 import React from "react"
 import { Breadcrumbs, Text, Link as ZeitLink } from "@zeit-ui/react"
 import { Link } from "gatsby"
-// import { useAuth } from "react-use-auth"
 import { Github } from "@zeit-ui/react-icons"
 
-// const Login = () => {
-//   const { isAuthenticated, login, logout, isAuthenticating } = useAuth()
-
-//   if (isAuthenticated()) {
-//     return (
-//       <>
-//         <Link onClick={logout}>Logout</Link>
-//         <small>{isAuthenticating ? "Verifying ..." : null}</small>
-//       </>
-//     )
-//   } else {
-//     return (
-//       <>
-//         <Link onClick={login}>Login</Link>
-//         <small>{isAuthenticating ? "Verifying ..." : null}</small>
-//       </>
-//     )
-//   }
-// }
-
 const Header = ({ siteTitle }) => {
-  // const { isAuthenticated, user } = useAuth()
   return (
     <header>
       <div
@@ -51,12 +29,6 @@ const Header = ({ siteTitle }) => {
             </Breadcrumbs.Item>
           </Breadcrumbs>
         </nav>
-        {/* <div>
-          <Login />
-          <span style={{ margin: "0", padding: "0" }}>
-            {isAuthenticated() ? user.name : ""}
-          </span>
-        </div> */}
       </div>
 
       <div
