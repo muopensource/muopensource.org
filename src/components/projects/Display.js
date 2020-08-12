@@ -1,4 +1,3 @@
-import { Card } from "@zeit-ui/react"
 import React from "react"
 import { ProjectCard } from "./ProjectCard"
 
@@ -42,6 +41,7 @@ const Display = () => {
         display: "grid",
         placeItems: "center",
         gridTemplateColumns: "1fr 1fr",
+        marginBottom: "3rem",
       }}
     >
       {projects.map(proj => {

@@ -14,6 +14,7 @@
     "babel-plugin-styled-components": "^1.11.1",
     "emotion-theming": "^10.0.14",
     "gatsby": "^2.17.11",
+    "gatsby-cli": "^2.12.83",
     "gatsby-image": "^2.2.31",
     "gatsby-plugin-manifest": "^2.2.27",
     "gatsby-plugin-mdx": "^1.2.34",
@@ -27,7 +28,6 @@
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-helmet": "^5.2.1",
-    "react-use-auth": "^0.5.1",
     "rebass": "^4.0.1",
     "styled-components": "^5.1.1"
   },
@@ -35,6 +35,7 @@
     "react": "^16.8.6"
   },
   "devDependencies": {
+    "gatsby-source-github": "^0.0.2",
     "prettier": "^1.18.2",
     "relative-deps": "^0.1.2"
   },

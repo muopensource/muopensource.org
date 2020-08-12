@@ -38,9 +38,12 @@ const Header = ({ siteTitle }) => {
           placeItems: "center",
         }}
       >
-        <Text h4 size="1rem" style={{ marginTop: "0.5rem" }}>
-          {siteTitle.slice(0, 22).concat("'s")}
-        </Text>
+        <img
+          width="210px"
+          src="https://iili.io/dVIzUQ.png"
+          alt="kisspng university of manchester manchester university man 5af4370cd30b19.4516330015259543168644"
+          border="0"
+        ></img>
 
         <Text h1 size="2.245rem">
           Open Source Project.

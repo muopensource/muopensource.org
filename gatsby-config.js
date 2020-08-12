@@ -36,8 +36,33 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    // github graphql source
+    {
+      resolve: "gatsby-source-github",
+      options: {
+        headers: {
+          Authorization: "Bearer " + process.env.GITHUB_ORG_KEY,
+        },
+        queries: [
+          `{
+            organization(login: "muopensource") {
+              name
+              avatarUrl(size: 10)
+              repositories(first: 6) {
+                edges {
+                  node {
+                    forkCount
+                    description
+                    url
+                    name
+                  }
+                }
+              }
+            }
+          }
+          `,
+        ],
+      },
+    },
   ],
 }
