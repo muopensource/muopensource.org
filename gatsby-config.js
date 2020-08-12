@@ -1,7 +1,10 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 module.exports = {
   siteMetadata: {
     title: `Manchester University | Open Source Project`,
-    description: `A collection of open source project and researches by Manchester Inviersty Math & Computer Science Department`,
+    description: `A collection of open source project and research papers by Manchester Unviersty | Math & Computer Science Department`,
     author: `@hawyarfarooq`,
   },
   plugins: [
@@ -41,7 +44,7 @@ module.exports = {
       resolve: "gatsby-source-github",
       options: {
         headers: {
-          Authorization: "Bearer " + process.env.GITHUB_ORG_KEY,
+          Authorization: `Bearer ` + process.env.GITHUB_KEY,
         },
         queries: [
           `{

@@ -51,8 +51,9 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
-# dotenv environment variables file
-.env
+# dotenv environment variables file. Hide prof & dev and omit .env.example
+.env.production
+.env.development
 
 # gatsby files
 .cache/
