@@ -40,9 +40,6 @@
     "prettier": "^1.18.2",
     "relative-deps": "^0.1.2"
   },
-  "relativeDependencies": {
-    "react-use-auth": "../../"
-  },
   "keywords": [
     "gatsby"
   ],
@@ -53,11 +50,7 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "postinstall": "relative-deps",
-    "prestart": "relative-deps",
-    "prebuild": "relative-deps",
-    "pretest": "relative-deps"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "repository": {
     "type": "git",

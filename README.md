@@ -1,11 +1,17 @@
-## MU - Open Source Website
-
 ## 🚀 Quick start
 
 1. **Clone**:
    `git clone https://github.com/muopensource/muopensource.com.git`
 
-2. **Start developing.**
+2. **Install**:
+   Install the required dependencies.
+
+   ```sh
+   npm install
+   // yarn
+   ```
+
+3) **Start developing.**
 
    Navigate into your new site’s directory and start it up.
 
@@ -13,7 +19,7 @@
    gatsby develop
    ```
 
-3. **Open the source code and start editing!**
+4) **Open the source code and start editing!**
 
    Your site is now running at `http://localhost:8000`!
 

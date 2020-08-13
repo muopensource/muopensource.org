@@ -1,23 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import Header from "../Header"
 import { Page } from "@zeit-ui/react"
 import Footer from "../Footer"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <div>
+      {/* top yellow line on every page */}
       <div
         style={{
           position: "absolute",
@@ -30,7 +20,7 @@ const Layout = ({ children }) => {
       />
       <Page size="small" dotBackdrop="true" style={{ paddingTop: "6rem" }}>
         <Page.Header>
-          <Header siteTitle={data.site.siteMetadata.title} />
+          <Header />
         </Page.Header>
         <Page.Content>
           <main style={{ margin: 0, padding: 0 }}>{children}</main>
