@@ -19,7 +19,7 @@ const Articles = ({ data: { allMdx: edges } }) => {
         const { frontmatter } = post.node
         return (
           <div key={post.node.id}>
-            <Link to={`articles/${frontmatter.slug}`}>{frontmatter.title}</Link>
+            <Link to={`${frontmatter.slug}`}>{frontmatter.title}</Link>
           </div>
         )
       })}

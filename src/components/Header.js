@@ -19,8 +19,7 @@ const Header = () => {
             </Breadcrumbs.Item>
             <Breadcrumbs.Item>
               <ZeitLink href="https://github.com/hawyar?tab=repositories" color>
-                {" "}
-                GitHub
+                Resources
               </ZeitLink>
             </Breadcrumbs.Item>
             <Breadcrumbs.Item>

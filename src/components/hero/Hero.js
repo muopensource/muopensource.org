@@ -1,7 +1,6 @@
 import { Text } from "@zeit-ui/react"
 import React from "react"
-import Img from "../image"
-
+import MuLogo from "../../images/mu-color-logo.png"
 const Hero = () => {
   return (
     <div>
@@ -11,10 +10,8 @@ const Hero = () => {
           placeItems: "center",
         }}
       >
-        <div
-          style={{ maxWidth: `300px`, marginBottom: `1.45rem`, border: `0` }}
-        >
-          <Img />
+        <div style={{ maxWidth: `210px`, marginBottom: `1.45rem` }}>
+          <img src={MuLogo} alt="Manchester University" />
         </div>
 
         <Text h1 size="2.245rem">
