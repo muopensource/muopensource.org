@@ -1,13 +1,21 @@
-import React from "react"
-
+/** @jsx jsx */
+import { Link } from "gatsby"
+import { jsx, Styled } from "theme-ui"
 import Layout from "../components/layout/Layout"
 import SEO from "../components/seo"
 
 const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+
+    <Styled.h3>PAGE NOT FOUND</Styled.h3>
+
+    <Styled.p sx={{ mt: 4 }}>
+      You just hit a route that doesn&#39;t exist... the sadness.
+    </Styled.p>
+    <Link to="/" activeClassName="active">
+      Go back home
+    </Link>
   </Layout>
 )
 

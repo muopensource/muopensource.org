@@ -1,16 +1,16 @@
 import React from "react"
-import { Text, Avatar, Link, Tooltip } from "@zeit-ui/react"
+import { Text, Avatar, Link } from "@zeit-ui/react"
 
 const contributors = [
-  {
-    name: "zaidmasri2",
-    link:
-      "https://avatars1.githubusercontent.com/u/61603036?s=460&u=16dd805d5720f78c88838b5ef4c32b9559ebdc56&v=4",
-  },
   {
     name: "hawyar",
     link:
       "https://avatars0.githubusercontent.com/u/42186608?s=460&u=c820fb56d712e57fe87e037c99a83a588916b5da&v=4",
+  },
+  {
+    name: "zaidmasri2",
+    link:
+      "https://avatars1.githubusercontent.com/u/61603036?s=460&u=16dd805d5720f78c88838b5ef4c32b9559ebdc56&v=4",
   },
 ]
 const Footer = () => {
@@ -37,16 +37,13 @@ const Footer = () => {
           </Text>
           <div>
             <Avatar.Group>
-              <Tooltip text={contributors[0].name}>
-                <Link href={`https://github.com/${contributors[0].name}`} color>
-                  <Avatar src={contributors[0].link} stacked />{" "}
-                </Link>
-              </Tooltip>
-              <Tooltip text={contributors[1].name}>
-                <Link color href={`https://github.com/${contributors[1].name}`}>
-                  <Avatar src={contributors[1].link} stacked />{" "}
-                </Link>
-              </Tooltip>
+              {contributors.map(author => {
+                return (
+                  <Link href={`https://github.com/${author.name}`} color>
+                    <Avatar src={author.link} stacked />{" "}
+                  </Link>
+                )
+              })}
             </Avatar.Group>
           </div>
         </div>

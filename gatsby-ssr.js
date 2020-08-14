@@ -1,18 +1,9 @@
 import React from "react"
-import { ZeitProvider, CssBaseline } from "@zeit-ui/react"
-
-// override s
-const myTheme = {
-  palette: {
-    selection: "#eeb111",
-  },
-}
+import CssBaseline from "@zeit-ui/react/esm/css-baseline"
 
 export const wrapRootElement = ({ element }) => (
   <div>
-    <ZeitProvider theme={myTheme}>
-      <CssBaseline />
-      {element}
-    </ZeitProvider>
+    <CssBaseline />
+    {element}
   </div>
 )

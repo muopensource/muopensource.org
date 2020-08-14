@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import PropTypes from "prop-types"
-import { Breadcrumbs } from "@zeit-ui/react"
+import Breadcrumbs from "@zeit-ui/react/esm/breadcrumbs"
 import { Link } from "gatsby"
 
 const Header = () => {
