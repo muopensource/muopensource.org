@@ -1,23 +1,21 @@
 import { Text } from "@zeit-ui/react"
 import React from "react"
+import Img from "../image"
 
 const Hero = () => {
   return (
     <div>
       <div
         style={{
-          marginTop: "3rem",
-
           display: "grid",
           placeItems: "center",
         }}
       >
-        <img
-          width="210px"
-          src="https://iili.io/dVIzUQ.png"
-          alt="kisspng university of manchester manchester university man 5af4370cd30b19.4516330015259543168644"
-          border="0"
-        ></img>
+        <div
+          style={{ maxWidth: `300px`, marginBottom: `1.45rem`, border: `0` }}
+        >
+          <Img />
+        </div>
 
         <Text h1 size="2.245rem">
           Open Source Project.

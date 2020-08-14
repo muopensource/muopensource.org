@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import Header from "../Header"
 import { Page } from "@zeit-ui/react"
 import Footer from "../Footer"
-
+import styled from "styled-components"
 const Layout = ({ children }) => {
   return (
     <div>

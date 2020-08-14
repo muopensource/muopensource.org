@@ -3,9 +3,9 @@ require("dotenv").config({
 })
 module.exports = {
   siteMetadata: {
-    title: `Manchester University | Open Source Project`,
+    title: `Open Source Project`,
     description: `A collection of open source project and research papers by Manchester Unviersty | Math & Computer Science Department`,
-    author: `@hawyarfarooq`,
+    author: `@hawyar`,
   },
   plugins: [
     `gatsby-plugin-mdx`,
@@ -17,6 +17,8 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+
+    // optimize assets in src/images/...
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -26,7 +28,16 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-styled-components`,
+
+    // omit all except ssr
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      // options: {
+      ssr: true,
+      //   minify: false,
+      //   pure: true,
+      // },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -46,6 +57,7 @@ module.exports = {
         headers: {
           Authorization: `Bearer ` + process.env.GITHUB_KEY,
         },
+        // query for all repos under muopensource [limit: 10 repo, includes num of forks, description, ulr, name]
         queries: [
           `{
             organization(login: "muopensource") {

@@ -1,6 +1,7 @@
 import React from "react"
 import { ZeitProvider, CssBaseline } from "@zeit-ui/react"
 
+// override s
 const myTheme = {
   palette: {
     selection: "#eeb111",
