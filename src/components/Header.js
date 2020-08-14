@@ -1,28 +1,70 @@
+/** @jsx jsx */
+import { jsx } from "theme-ui"
 import PropTypes from "prop-types"
-import React from "react"
-import { Breadcrumbs, Link as ZeitLink } from "@zeit-ui/react"
+import { Breadcrumbs } from "@zeit-ui/react"
 import { Link } from "gatsby"
 
 const Header = () => {
   return (
     <header>
       <div
-        style={{
+        sx={{
           display: "grid",
           placeItems: "center",
         }}
       >
         <nav>
           <Breadcrumbs size="small">
-            <Breadcrumbs.Item>
-              <Link to="/articles">Articles</Link>
-            </Breadcrumbs.Item>
-            <Breadcrumbs.Item>
-              <Link to="/resources">Resources</Link>
-            </Breadcrumbs.Item>
-            <Breadcrumbs.Item>
-              <Link to="/about">About</Link>
-            </Breadcrumbs.Item>
+            <Link
+              to="/"
+              activeClassName="active"
+              sx={{
+                color: "inherit",
+                "&.active": {
+                  color: "primary",
+                },
+              }}
+            >
+              Home
+            </Link>
+            <Link
+              to="/articles"
+              activeClassName="active"
+              sx={{
+                color: "inherit",
+                "&.active": {
+                  color: "primary",
+                },
+              }}
+            >
+              Articles
+            </Link>
+
+            <Link
+              to="/resources"
+              activeClassName="active"
+              sx={{
+                color: "inherit",
+                "&.active": {
+                  color: "primary",
+                },
+              }}
+            >
+              Resources
+            </Link>
+
+            <Link
+              to="/about"
+              activeClassName="active"
+              sx={{
+                color: "inherit",
+                "&.active": {
+                  color: "primary",
+                },
+              }}
+            >
+              About
+            </Link>
           </Breadcrumbs>
         </nav>
       </div>

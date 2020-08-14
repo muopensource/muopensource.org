@@ -8,6 +8,8 @@ module.exports = {
     author: `@hawyar`,
   },
   plugins: [
+    `gatsby-theme-style-guide`,
+    `gatsby-plugin-theme-ui`,
     `gatsby-plugin-mdx`,
     {
       resolve: "gatsby-source-filesystem",

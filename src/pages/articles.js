@@ -1,4 +1,5 @@
-import React from "react"
+/** @jsx jsx */
+import { jsx, Styled } from "theme-ui"
 import Layout from "../components/layout/Layout"
 import SEO from "../components/seo"
 import { graphql, Link } from "gatsby"
@@ -6,8 +7,6 @@ import { Text } from "@zeit-ui/react"
 import Header from "../components/Header"
 const Articles = ({ data: { allMdx: edges } }) => {
   const posts = edges.edges
-  console.log(posts)
-  console.log(posts[0].node.frontmatter.title)
   return (
     <Layout header={Header}>
       <SEO title="Articles" />
@@ -16,15 +15,46 @@ const Articles = ({ data: { allMdx: edges } }) => {
         Articles
       </Text>
 
-      {posts.map(post => {
-        console.log(post.node)
-        const { frontmatter } = post.node
-        return (
-          <div key={post.node.id}>
-            <Link to={`${frontmatter.slug}`}>{frontmatter.title}</Link>
-          </div>
-        )
-      })}
+      <ul
+        sx={{
+          listStyle: "none",
+          m: 0,
+          px: 3,
+          py: 4,
+        }}
+      >
+        {posts.map(({ node: { id, frontmatter } }) => (
+          <li key={id} sx={{ mb: 4 }}>
+            <Styled.h2
+              sx={{
+                m: 0,
+              }}
+            >
+              <Link
+                to={frontmatter.slug}
+                sx={{
+                  color: "inherit",
+                  textDecoration: "none",
+                  ":hover,:focus": {
+                    color: "primary",
+                    textDecoration: "underline",
+                  },
+                }}
+              >
+                {frontmatter.title}
+              </Link>
+            </Styled.h2>
+            <small sx={{ fontWeight: "bold" }}>Feb 24, 2020</small>
+            <Styled.p
+              sx={{
+                m: 0,
+              }}
+            >
+              Here is some description until we finish the blog's frontmatter
+            </Styled.p>
+          </li>
+        ))}
+      </ul>
     </Layout>
   )
 }
