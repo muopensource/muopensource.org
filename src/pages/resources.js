@@ -1,10 +1,13 @@
 import React from "react"
-
+import Layout from "../components/layout/Layout"
+import { Text } from "@zeit-ui/react"
 const resources = () => {
   return (
-    <div>
-      <span>resources page</span>
-    </div>
+    <Layout>
+      <Text h2 style={{ fontSize: `1.5rem` }}>
+        Resources
+      </Text>
+    </Layout>
   )
 }
 

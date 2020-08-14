@@ -18,9 +18,7 @@ const Header = () => {
               <Link to="/articles">Articles</Link>
             </Breadcrumbs.Item>
             <Breadcrumbs.Item>
-              <ZeitLink href="https://github.com/hawyar?tab=repositories" color>
-                Resources
-              </ZeitLink>
+              <Link to="/resources">Resources</Link>
             </Breadcrumbs.Item>
             <Breadcrumbs.Item>
               <Link to="/about">About</Link>

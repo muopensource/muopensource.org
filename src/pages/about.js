@@ -8,7 +8,9 @@ const about = () => {
     <div>
       <Layout>
         <SEO title="About" />
-        <Text h1>About</Text>
+        <Text h2 style={{ fontSize: `1.5rem` }}>
+          About
+        </Text>
       </Layout>
     </div>
   )

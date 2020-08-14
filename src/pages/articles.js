@@ -12,7 +12,9 @@ const Articles = ({ data: { allMdx: edges } }) => {
     <Layout header={Header}>
       <SEO title="Articles" />
 
-      <Text h1>Articles</Text>
+      <Text h2 style={{ fontSize: `1.5rem` }}>
+        Articles
+      </Text>
 
       {posts.map(post => {
         console.log(post.node)

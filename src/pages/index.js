@@ -2,11 +2,13 @@ import React from "react"
 import Hero from "../components/hero/Hero"
 import Layout from "../components/layout/Layout"
 import SEO from "../components/seo"
+import ProjectDisplay from "../components/projects/ProjectsDisplay"
 const IndexPage = () => {
   return (
     <Layout>
-      <Hero />
       <SEO title="Home" />
+      <Hero />
+      <ProjectDisplay />
     </Layout>
   )
 }

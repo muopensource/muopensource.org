@@ -6,7 +6,7 @@ export const ProjectCard = ({ data }) => {
   return (
     <div style={{ margin: "1.4rem 1rem" }}>
       <Link color href="/">
-        <Card width="350px" hoverable>
+        <Card width="350px">
           <Text h2 size="1.245rem">
             {name}
           </Text>

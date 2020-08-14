@@ -34,7 +34,7 @@ const projects = [
   },
 ]
 
-const Display = () => {
+const ProjectDisplay = () => {
   return (
     <div
       style={{
@@ -51,4 +51,4 @@ const Display = () => {
   )
 }
 
-export default Display
+export default ProjectDisplay
