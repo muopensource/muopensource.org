@@ -68,10 +68,12 @@ module.exports = {
               repositories(first: 6) {
                 edges {
                   node {
-                    forkCount
+                    nameWithOwner
+                    name
+                    id
                     description
                     url
-                    name
+                 
                   }
                 }
               }

@@ -39,7 +39,11 @@ const Footer = () => {
             <Avatar.Group>
               {contributors.map(author => {
                 return (
-                  <Link href={`https://github.com/${author.name}`} color>
+                  <Link
+                    key={author.name}
+                    href={`https://github.com/${author.name}`}
+                    color
+                  >
                     <Avatar src={author.link} stacked />{" "}
                   </Link>
                 )
