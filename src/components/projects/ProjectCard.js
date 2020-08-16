@@ -19,6 +19,10 @@ export const ProjectCard = ({ data }) => {
             color: "#000",
             border: `1px solid #efefef`,
             p: 4,
+            transition: `border 0.2s ease-in-out`,
+            ":hover": {
+              border: `1px solid #000`,
+            },
           }}
         >
           <Styled.h3 sx={{ fontSize: 16 }}>{name}</Styled.h3>

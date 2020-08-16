@@ -77,6 +77,12 @@ module.exports = {
                   }
                 }
               }
+              membersWithRole(first: 10) {
+                nodes {
+                  name
+                  avatarUrl
+                }
+              }
             }
           }
           `,

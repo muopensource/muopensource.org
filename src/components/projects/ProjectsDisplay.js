@@ -42,7 +42,7 @@ const ProjectDisplay = () => {
       }}
     >
       {allRepo.map(repo => {
-        return <ProjectCard data={repo} />
+        return <ProjectCard data={repo} key={repo.node.id} />
       })}
     </div>
   )
