@@ -73,7 +73,16 @@ module.exports = {
                     id
                     description
                     url
-                 
+                    repositoryTopics(first: 10) {
+                      edges {
+                        node {
+                          topic {
+                            name
+                            id
+                          }
+                        }
+                      }
+                    }
                   }
                 }
               }

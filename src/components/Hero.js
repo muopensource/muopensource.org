@@ -1,5 +1,5 @@
 import React from "react"
-import MuLogo from "../../images/mu-color-logo.png"
+import MuLogo from "../images/mu-color-logo.png"
 import { Styled } from "theme-ui"
 const Hero = () => {
   return (

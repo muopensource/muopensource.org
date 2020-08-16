@@ -17,6 +17,16 @@ const ProjectDisplay = () => {
                   description
                   name
                   url
+                  repositoryTopics {
+                    edges {
+                      node {
+                        topic {
+                          name
+                          id
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }
