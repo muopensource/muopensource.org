@@ -10,7 +10,8 @@ export const ProjectCard = ({ data }) => {
 
   const allTopics = data.node.repositoryTopics.edges
 
-  console.log(data)
+  console.log(allTopics)
+
   return (
     <div>
       <Styled.a href={url}>

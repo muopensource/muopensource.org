@@ -27,6 +27,19 @@ const Header = () => {
             >
               Home
             </Link>
+
+            <Link
+              to="/research"
+              activeClassName="active"
+              sx={{
+                color: "inherit",
+                "&.active": {
+                  color: "primary",
+                },
+              }}
+            >
+              Research
+            </Link>
             <Link
               to="/articles"
               activeClassName="active"
@@ -40,20 +53,7 @@ const Header = () => {
               Articles
             </Link>
 
-            <Link
-              to="/resources"
-              activeClassName="active"
-              sx={{
-                color: "inherit",
-                "&.active": {
-                  color: "primary",
-                },
-              }}
-            >
-              Resources
-            </Link>
-
-            <Link
+            {/* <Link
               to="/about"
               activeClassName="active"
               sx={{
@@ -64,7 +64,7 @@ const Header = () => {
               }}
             >
               About
-            </Link>
+            </Link> */}
           </Breadcrumbs>
         </nav>
       </div>

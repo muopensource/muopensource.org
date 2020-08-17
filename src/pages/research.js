@@ -5,7 +5,7 @@ const resources = () => {
   return (
     <Layout>
       <Text h2 style={{ fontSize: `1.5rem` }}>
-        Resources
+        Research
       </Text>
     </Layout>
   )
