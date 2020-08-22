@@ -43,13 +43,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `MU-Open-Source`,
+        short_name: `muopensource`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#fff`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/mu-crest.png`, // path is relative to the root
       },
     },
     // github graphql source

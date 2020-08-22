@@ -1,6 +1,7 @@
 import React from "react"
 import { Text, Avatar, Link } from "@zeit-ui/react"
 
+// the authors (nodes) are generated in the graphql, just need to pull it here useStaticQuery
 const contributors = [
   {
     name: "hawyar",
