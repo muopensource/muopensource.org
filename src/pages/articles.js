@@ -3,16 +3,11 @@ import { jsx, Styled } from "theme-ui"
 import Layout from "../components/layout/Layout"
 import SEO from "../components/seo"
 import { graphql, Link } from "gatsby"
-import { Text } from "@zeit-ui/react"
 const Articles = ({ data: { allMdx: edges } }) => {
   const posts = edges.edges
   return (
     <Layout>
       <SEO title="Articles" />
-
-      <Text h2 style={{ fontSize: `1.5rem` }}>
-        Articles
-      </Text>
 
       <ul
         sx={{

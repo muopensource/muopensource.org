@@ -6,9 +6,11 @@ import ProjectDisplay from "../components/projects/ProjectsDisplay"
 const IndexPage = () => {
   return (
     <Layout>
-      <SEO title="Home" />
-      <Hero />
-      <ProjectDisplay />
+      <div>
+        <SEO title="Home" />
+        <Hero />
+        <ProjectDisplay />
+      </div>
     </Layout>
   )
 }

@@ -31,6 +31,12 @@ export const base = {
     secondary: "#EEB111",
     muted: "#f6f6f6",
   },
+  images: {
+    logo: {
+      width: `120px`,
+      height: `120px`,
+    },
+  },
   // this will be useful for completely isolated components or just drop in other components
   styles: {
     root: {
