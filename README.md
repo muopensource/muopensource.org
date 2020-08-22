@@ -1,3 +1,7 @@
+## MU Open Source - Website
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/69a95f03-10e2-47e6-b8f3-1297177381a4/deploy-status)](https://app.netlify.com/sites/muopensource/deploys)
+
 ## 🚀 Setup
 
 1. **Clone**:

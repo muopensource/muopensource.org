@@ -4,11 +4,10 @@ import Layout from "../components/layout/Layout"
 import SEO from "../components/seo"
 import { graphql, Link } from "gatsby"
 import { Text } from "@zeit-ui/react"
-import Header from "../components/Header"
 const Articles = ({ data: { allMdx: edges } }) => {
   const posts = edges.edges
   return (
-    <Layout header={Header}>
+    <Layout>
       <SEO title="Articles" />
 
       <Text h2 style={{ fontSize: `1.5rem` }}>
