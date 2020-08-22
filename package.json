@@ -1,6 +1,6 @@
 {
   "name": "muopensource.org",
-  "private": true,
+  "private": false,
   "description": "MU | Open Source Project",
   "version": "0.1.0",
   "author": "hawyar",
@@ -43,12 +43,15 @@
     "relative-deps": "^0.1.2"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "manchester",
+    "muopensource"
   ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "local": "gatsby develop -H 0.0.0.0",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",

@@ -17,14 +17,15 @@ const Articles = ({ data: { allMdx: edges } }) => {
 
       <ul
         sx={{
+          mt: "4rem",
+          p: 0,
+          ml: 0,
+
           listStyle: "none",
-          m: 0,
-          px: 3,
-          py: 4,
         }}
       >
         {posts.map(({ node: { id, frontmatter } }) => (
-          <li key={id} sx={{ mb: 4 }}>
+          <div key={id} sx={{ mb: "2rem", listStyle: "none" }}>
             <Styled.h2
               sx={{
                 m: 0,
@@ -44,7 +45,7 @@ const Articles = ({ data: { allMdx: edges } }) => {
                 {frontmatter.title}
               </Link>
             </Styled.h2>
-            <small sx={{ fontWeight: "bold" }}>Feb 24, 2020</small>
+            <small sx={{ fontWeight: "500" }}>Feb 24, 2020</small>
             <Styled.p
               sx={{
                 m: 0,
@@ -52,7 +53,7 @@ const Articles = ({ data: { allMdx: edges } }) => {
             >
               Here is some description until we finish the blog's frontmatter
             </Styled.p>
-          </li>
+          </div>
         ))}
       </ul>
     </Layout>
