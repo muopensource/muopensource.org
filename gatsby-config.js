@@ -3,8 +3,8 @@ require("dotenv").config({
 })
 module.exports = {
   siteMetadata: {
-    title: `Open Source Project`,
-    description: `A collection of open source project and research papers by Manchester Unviersty | Math & Computer Science Department`,
+    title: `Open Source`,
+    description: `A collection of open source projects and research papers by Manchester Unviersty | Math & Computer Science Department`,
     author: `@hawyar`,
   },
   plugins: [
@@ -34,11 +34,11 @@ module.exports = {
     // omit all except ssr
     {
       resolve: `gatsby-plugin-styled-components`,
-      // options: {
-      ssr: true,
-      //   minify: false,
-      //   pure: true,
-      // },
+      options: {
+        ssr: true,
+        //   minify: false,
+        //   pure: true,
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,

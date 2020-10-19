@@ -7,7 +7,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <div>
-        <SEO title="Home" />
+        <SEO title="Manchester University" />
         <Hero />
         <ProjectDisplay />
       </div>

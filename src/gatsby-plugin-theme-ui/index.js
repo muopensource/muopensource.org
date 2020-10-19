@@ -37,7 +37,7 @@ export const base = {
       height: `120px`,
     },
   },
-  // this will be useful for completely isolated components or just drop in other components
+  // this will be useful for completely isolated components or other drop in components
   styles: {
     root: {
       fontFamily: "body",

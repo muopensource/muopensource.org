@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
         }}
       />
       <Page size="mini" dotBackdrop="true" style={{ paddingTop: "6rem" }}>
-        <Page.Header>
+        <Page.Header center="true">
           <Header />
         </Page.Header>
         <Page.Content>

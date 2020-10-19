@@ -11,7 +11,6 @@ const Articles = ({ data: { allMdx: edges } }) => {
 
       <ul
         sx={{
-          mt: "4rem",
           p: 0,
           ml: 0,
 
@@ -19,7 +18,7 @@ const Articles = ({ data: { allMdx: edges } }) => {
         }}
       >
         {posts.map(({ node: { id, frontmatter } }) => (
-          <div key={id} sx={{ mb: "2rem", listStyle: "none" }}>
+          <div key={id} sx={{ mb: "2rem", listStyle: "none", width: `540px` }}>
             <Styled.h2
               sx={{
                 m: 0,
