@@ -8,7 +8,7 @@ const customZeitTheme = {
   },
 }
 
-export const wrapRootElement = ({ element }) => (
+export const wrapPageElement = ({ element }) => (
   <div>
     <ZeitProvider theme={customZeitTheme}>
       <CssBaseline />

@@ -10,6 +10,8 @@ module.exports = {
   plugins: [
     `gatsby-theme-style-guide`,
     `gatsby-plugin-theme-ui`,
+
+    // specifies the path of the dir for all the posts
     `gatsby-plugin-mdx`,
     {
       resolve: "gatsby-source-filesystem",

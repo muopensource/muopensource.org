@@ -16,7 +16,6 @@ const Hero = () => {
             width: "270px",
           }}
         />
-        {/* <Styled.h1>Open Source</Styled.h1> */}
       </div>
     </div>
   )
