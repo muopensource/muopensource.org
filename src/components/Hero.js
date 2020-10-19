@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Styled } from "theme-ui"
+import { jsx } from "theme-ui"
 import MuLogo from "../images/mu-color-logo.png"
 const Hero = () => {
   return (
@@ -11,6 +11,7 @@ const Hero = () => {
         }}
       >
         <img
+          alt="Manchester University Crest Logo"
           src={MuLogo}
           sx={{
             width: "270px",
